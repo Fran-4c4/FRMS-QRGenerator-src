@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRMS-QRGenerator", "FRMS-QRGenerator\FRMS-QRGenerator.csproj", "{626F43F9-93E2-447F-A7B6-9CDF47C8CEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FRMS-QRGenerator.Tests", "FRMS-QRGenerator.Tests\FRMS-QRGenerator.Tests.csproj", "{9E00C7A2-3784-46F1-95F3-4443207864F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{626F43F9-93E2-447F-A7B6-9CDF47C8CEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626F43F9-93E2-447F-A7B6-9CDF47C8CEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626F43F9-93E2-447F-A7B6-9CDF47C8CEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626F43F9-93E2-447F-A7B6-9CDF47C8CEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E00C7A2-3784-46F1-95F3-4443207864F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E00C7A2-3784-46F1-95F3-4443207864F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E00C7A2-3784-46F1-95F3-4443207864F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E00C7A2-3784-46F1-95F3-4443207864F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

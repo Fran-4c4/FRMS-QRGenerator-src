@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+          cache: true
+          cache-dependency-path: '**/packages.lock.json'
+
+      - name: Restore
+        run: dotnet restore .\FRMS-QRGenerator.sln --locked-mode
+
+      - name: Build
+        run: dotnet build .\FRMS-QRGenerator.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test .\FRMS-QRGenerator.sln --configuration Release --no-build
+
+      - name: Check publication readiness
+        shell: pwsh
+        run: .\scripts\Test-PublicationReadiness.ps1
